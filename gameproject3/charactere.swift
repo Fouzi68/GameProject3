@@ -12,7 +12,7 @@ class Character {
     var life = 100
     var attack = 10
     var nameOfCharactere = ["fighter", "magus", "dwarf", "colossus"]
-    
+    var choiceOfUser: [String] = []
 }
 let numberOfCharactereMax = 3
 

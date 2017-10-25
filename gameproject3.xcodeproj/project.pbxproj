@@ -49,7 +49,7 @@
 		AAB1AFA21F9DC52300D27440 = {
 			isa = PBXGroup;
 			children = (
-				AAB1AFAD1F9DC52300D27440 /* mentorat */,
+				AAB1AFAD1F9DC52300D27440 /* gameproject3 */,
 				AAB1AFAC1F9DC52300D27440 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -62,7 +62,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AAB1AFAD1F9DC52300D27440 /* mentorat */ = {
+		AAB1AFAD1F9DC52300D27440 /* gameproject3 */ = {
 			isa = PBXGroup;
 			children = (
 				AAB1AFAE1F9DC52300D27440 /* main.swift */,
@@ -71,7 +71,7 @@
 				AA178CBA1F9DD4E0008BC0CD /* team.swift */,
 				AA874A551F9FDC9600E88D93 /* attack.swift */,
 			);
-			path = mentorat;
+			path = gameproject3;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,7 +110,7 @@
 					};
 				};
 			};
-			buildConfigurationList = AAB1AFA61F9DC52300D27440 /* Build configuration list for PBXProject "mentorat" */;
+			buildConfigurationList = AAB1AFA61F9DC52300D27440 /* Build configuration list for PBXProject "gameproject3" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -270,7 +270,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AAB1AFA61F9DC52300D27440 /* Build configuration list for PBXProject "mentorat" */ = {
+		AAB1AFA61F9DC52300D27440 /* Build configuration list for PBXProject "gameproject3" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AAB1AFB01F9DC52300D27440 /* Debug */,

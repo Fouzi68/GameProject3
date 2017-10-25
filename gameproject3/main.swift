@@ -11,8 +11,7 @@ import Foundation
 
 // SAY HELLO TO THE PLAYER
 print("=== HELLO WHAT'S YOUR NAME === ?")
-
-if let name = readLine() {
+if  let name = readLine() {
     print("WELCOME \(name) !")
 }
 // action of the user & MENU
@@ -24,19 +23,20 @@ print("= MENU ="
 if let choice = readLine() {
     switch choice {
     case "1":
-        print("Ok, YOU WILL START A NEW GAME")
+        print("Ok, YOU WILL START A NEW GAME,")
     case "2":
         print("OK GOODBYE !")
     default:
         print(" SORRY I DON'T UNDERSTAND")
     }
 }
+
+print(" === OKAY CAPTAIN ! NOW CHOICE THREE CHARACTERE ! ===")
 var i = 0
 let g = 3
-
-while i < g {
 // choice of charactere
-print(" === OKAY CAPTAIN ! NOW CHOICE YOUR CHARACTERE ! ==="
+while i < g {
+print(""
     + "\n.1 Dwarf"
     + "\n.2 Fighter"
     + "\n.3 Magus"
@@ -46,19 +46,37 @@ if let choix = readLine() {
     switch choix {
     case "1":
         print("okay now you have take a dwarf")
+        character.choiceOfUser += ["dwarf"]
     case "2":
         print("okay now you have take a fighter")
+        character.choiceOfUser += ["fighter"]
+
     case "3":
         print("okay now you have take a magus")
+        character.choiceOfUser += ["magus"]
+
     case "4":
         print("okay now you have take a colossus")
+        character.choiceOfUser += ["colossus"]
+
         
     default:
-        print("i don't understand sir !")
+        print("SORRY I DON'T UNDERSTAND YOUR CHOICE !")
         
     }
     i += 1
   }
 }
+
+//print the choice of the user
+print(" HEY, you have take : \(character.choiceOfUser)")
+
+//let the user change the name of his charactere
+print("change the name of the 1 charactere !")
+character.choiceOfUser[0] = "\(String(describing: readLine()))"
+character.choiceOfUser[1] = "\(String(describing: readLine()))"
+character.choiceOfUser[2] = "\(String(describing: readLine()))"
+print("okay now your charactere are \(character.choiceOfUser)")
+
 
 
