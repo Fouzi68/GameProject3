@@ -9,25 +9,21 @@
 import Foundation
 // class of the character & instance
 class Character {
-    var life = 100
-    var attack = 10
-    var nameOfCharactere = ["fighter", "magus", "dwarf", "colossus"]
+  static  var life = 0
+    var attack = 0
+    var nameOfCharactere: [String: Int] = ["fighter": 100, "magus": 40 , "dwarf": 25, "colossus": 300]
     var choiceOfUser: [String] = []
+    
 }
-let numberOfCharactereMax = 3
+
+
+var gameLife = Character()
 
 var character = Character()
 // Dwarf
-class Dwarf: Character {
-    
-}
-var dwarf = Dwarf()
-//fighter
-class Fighter: Character {
-    
-}
-var fighter = Fighter()
-//magus
+
+
+
 class Magus: Character {
 
 }

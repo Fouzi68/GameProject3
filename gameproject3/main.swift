@@ -7,6 +7,8 @@
 //  Arar Fouzi
 //  Start 19/10/17
 
+
+
 import Foundation
 
 // SAY HELLO TO THE PLAYER
@@ -43,40 +45,37 @@ print(""
     + "\n.1 Colossus")
 
 if let choix = readLine() {
+//    change the 'switch to the 'enum'
     switch choix {
-    case "1":
-        print("okay now you have take a dwarf")
-        character.choiceOfUser += ["dwarf"]
-    case "2":
-        print("okay now you have take a fighter")
-        character.choiceOfUser += ["fighter"]
-
-    case "3":
-        print("okay now you have take a magus")
-        character.choiceOfUser += ["magus"]
-
-    case "4":
-        print("okay now you have take a colossus")
-        character.choiceOfUser += ["colossus"]
-
+    
+        
+// finir la partie 1, tableau de joueur, partie 2 fonction ou methode !
+    
         
     default:
-        print("SORRY I DON'T UNDERSTAND YOUR CHOICE !")
+        print("okay now you have take a fighter")
         
     }
     i += 1
   }
 }
+var fighter = Fighter()
+fighter.name = "fouzi"
+
 
 //print the choice of the user
 print(" HEY, you have take : \(character.choiceOfUser)")
 
+
 //let the user change the name of his charactere
-print("change the name of the 1 charactere !")
+print("change the name of your characters !")
 character.choiceOfUser[0] = "\(String(describing: readLine()))"
 character.choiceOfUser[1] = "\(String(describing: readLine()))"
 character.choiceOfUser[2] = "\(String(describing: readLine()))"
-print("okay now your charactere are \(character.choiceOfUser)")
+
+// show the user the names of characters he has changed
+
+    print("okay now your characters are \(character.choiceOfUser)")
 
 
-
+// 
