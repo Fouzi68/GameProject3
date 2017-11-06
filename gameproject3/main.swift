@@ -36,46 +36,65 @@ if let choice = readLine() {
 print(" === OKAY CAPTAIN ! NOW CHOICE THREE CHARACTERE ! ===")
 var i = 0
 let g = 3
-// choice of charactere
-while i < g {
-print(""
-    + "\n.1 Dwarf"
-    + "\n.2 Fighter"
-    + "\n.3 Magus"
-    + "\n.1 Colossus")
+// choice of charactere & changing his name
 
-if let choix = readLine() {
-//    change the 'switch to the 'enum'
-    switch choix {
-    
-        
-// finir la partie 1, tableau de joueur, partie 2 fonction ou methode !
-    
-        
-    default:
-        print("okay now you have take a fighter")
-        
+while i < g {
+    print(""
+        + "\n.1 Dwarf"
+        + "\n.2 Fighter"
+        + "\n.3 Magus"
+        + "\n.1 Colossus")
+    if let choix = readLine() {
+           switch choix {
+           // DWARF
+           case "1":
+           print("okay now you have take a dwarf")
+            _ = Dwarf()
+           print("now change his name !")
+            dwarf.name = readLine()
+           characters.choice += ["\(String(describing: dwarf.name))"]
+           // FIGHTER
+           case "2":
+           print("okay now you have take a fighter")
+            _ = Fighter()
+           print("now change his name !")
+            fighter.name = readLine()
+           characters.choice += ["\(String(describing: fighter.name))"]
+           // MAGUS
+           case "3":
+          print("okay now you have take a magus")
+            _ = Magus()
+          print("now change his name !")
+          magus.name = readLine()
+          characters.choice += ["\(String(describing: magus.name))"]
+           //COLOSSUS
+           case "4":
+           print("okay now you have take a colossus")
+            _ = Colossus()
+            characters.choice = ["colossus"]
+           print("now change his name")
+           colossus.name = readLine()
+           characters.choice += ["\(String(describing: colossus.name))"]
+           default:
+           print("i don't understand sir !")
+            
+                }
+            i += 1
+          }
     }
-    i += 1
-  }
-}
-var fighter = Fighter()
-fighter.name = "fouzi"
 
 
 //print the choice of the user
-print(" HEY, you have take : \(character.choiceOfUser)")
+print("okay now your characters are \(characters.choice)")
 
 
-//let the user change the name of his charactere
-print("change the name of your characters !")
-character.choiceOfUser[0] = "\(String(describing: readLine()))"
-character.choiceOfUser[1] = "\(String(describing: readLine()))"
-character.choiceOfUser[2] = "\(String(describing: readLine()))"
-
-// show the user the names of characters he has changed
-
-    print("okay now your characters are \(character.choiceOfUser)")
 
 
-// 
+
+
+
+
+
+
+// finir la partie 1, tableau de joueur, partie 2 fonction ou methode !
+

@@ -12,4 +12,6 @@ class Character {
     var name: String?
     var life: Int?
     var attack: Int?
+  var choice:[String] = []
 }
+var characters = Character()

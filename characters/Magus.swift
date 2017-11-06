@@ -7,3 +7,7 @@
 //
 
 import Foundation
+class Magus: Character {
+    
+}
+var magus = Magus()

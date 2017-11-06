@@ -9,6 +9,8 @@
 import Foundation
 
 class Fighter: Character {
-
+    
 }
+
+var fighter = Fighter()
 

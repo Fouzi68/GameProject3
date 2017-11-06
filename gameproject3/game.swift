@@ -15,3 +15,4 @@ class NewGame {
 var newGame = NewGame()
 
 
+var table: [String] = []

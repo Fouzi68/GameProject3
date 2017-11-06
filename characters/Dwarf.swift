@@ -8,7 +8,9 @@
 
 import Foundation
 
-class Dwarf {
-    var name: String?
+class Dwarf: Character {
+  static  var name: String?
     
 }
+var dwarf = Dwarf()
+

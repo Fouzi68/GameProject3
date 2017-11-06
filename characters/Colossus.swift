@@ -7,3 +7,7 @@
 //
 
 import Foundation
+class Colossus: Character{
+    
+}
+var colossus = Colossus()
