@@ -33,7 +33,7 @@ if let choice = readLine() {
     }
 }
 
-print(" === OKAY CAPTAIN ! NOW CHOICE THREE CHARACTERE ! ===")
+print("=== OK YOU HAVE THE TEAM 1 ! NOW CHOICE THREE CHARACTERE ! ===")
 var i = 0
 let g = 3
 // choice of charactere & changing his name
@@ -49,32 +49,25 @@ while i < g {
            // DWARF
            case "1":
            print("okay now you have take a dwarf")
-            _ = Dwarf()
-           print("now change his name !")
-            dwarf.name = readLine()
-           characters.choice += ["\(String(describing: dwarf.name))"]
+           var dwarf = Dwarf()
            // FIGHTER
            case "2":
            print("okay now you have take a fighter")
             _ = Fighter()
            print("now change his name !")
             fighter.name = readLine()
-           characters.choice += ["\(String(describing: fighter.name))"]
            // MAGUS
            case "3":
           print("okay now you have take a magus")
             _ = Magus()
           print("now change his name !")
           magus.name = readLine()
-          characters.choice += ["\(String(describing: magus.name))"]
            //COLOSSUS
            case "4":
            print("okay now you have take a colossus")
-            _ = Colossus()
-            characters.choice = ["colossus"]
+            colossus = Colossus()
            print("now change his name")
            colossus.name = readLine()
-           characters.choice += ["\(String(describing: colossus.name))"]
            default:
            print("i don't understand sir !")
             
@@ -83,7 +76,7 @@ while i < g {
           }
     }
 
-
+var fight = Fighter()
 //print the choice of the user
 print("okay now your characters are \(characters.choice)")
 

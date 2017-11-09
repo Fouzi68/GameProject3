@@ -12,5 +12,4 @@ class Dwarf: Character {
   static  var name: String?
     
 }
-var dwarf = Dwarf()
 
