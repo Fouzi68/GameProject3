@@ -8,11 +8,15 @@
 
 import Foundation
 
-class Character {
-    var name: String?
+ class Character {
+    var type: Character
+    init(type: Character) {
+        self.type = type
+    }
+   var name: String?
     var life: Int?
     var attack: Int?
-    var characters: [Character] = []
+    static var characters: [Character] = []
 
 }
 

@@ -9,7 +9,13 @@
 import Foundation
 
 class Dwarf: Character {
-  static  var name: String?
+    override init(type: Character) {
+       self.type = Character
+    }
     
-}
+    }
+    
+
+
+// life = 30 ; attack = 70
 

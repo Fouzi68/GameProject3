@@ -10,4 +10,5 @@ import Foundation
 class Magus: Character {
     
 }
-var magus = Magus()
+
+// give life = + 35 life

@@ -49,43 +49,53 @@ while i < g {
            // DWARF
            case "1":
            print("okay now you have take a dwarf")
-           var dwarf = Dwarf()
+         var dwarf = Dwarf()
+           Character.characters = [dwarf]
+           print("change the name of your characters")
+
+            dwarf.name = readLine()
            // FIGHTER
            case "2":
-           print("okay now you have take a fighter")
-            _ = Fighter()
-           print("now change his name !")
+            print("okay now you have take a fighter")
+
+            var fighter = Fighter()
+            Character.characters = [fighter]
+            print("change the name of your characters")
+
             fighter.name = readLine()
+          
            // MAGUS
            case "3":
-          print("okay now you have take a magus")
-            _ = Magus()
-          print("now change his name !")
-          magus.name = readLine()
+            print("okay now you have take a magus")
+         var magus = Magus()
+
+            Character.characters = [magus]
+
+            magus.name = readLine()
+
+
            //COLOSSUS
            case "4":
-           print("okay now you have take a colossus")
-            colossus = Colossus()
-           print("now change his name")
-           colossus.name = readLine()
+            print("okay now you have take a colossus")
+
+           var colossus = Colossus()
+           Character.characters = [colossus]
+          colossus.name = readLine()
            default:
-           print("i don't understand sir !")
+           print("I DON'T UNDERSTAND YOUR CHOICE !")
             
                 }
             i += 1
           }
     }
+var lol = Fighter()
 
-var fight = Fighter()
-//print the choice of the user
-print("okay now your characters are \(characters.choice)")
+// change the name
 
-
-
-
-
-
-
+print(" the name of your characters"
+    + "\n.1 \(Character.characters[0])"
+    + "\n.2 \(Character.characters[1])"
+    + "\n.3 \(Character.characters[2])")
 
 
 

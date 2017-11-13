@@ -8,8 +8,10 @@
 
 import Foundation
 
-class Attack{
-    func attack() {
-        _ = 10
+class Attack {
+    static func attack() {
+        var tools: Int?
+//        the value of tools have to remove the life of the character !!
     }
 }
+

@@ -11,6 +11,6 @@ import Foundation
 class Fighter: Character {
     
 }
+//life = 100 ; attack : 10
 
-var fighter = Fighter()
 

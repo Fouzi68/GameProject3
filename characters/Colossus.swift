@@ -8,6 +8,10 @@
 
 import Foundation
 class Colossus: Character{
-    
+    override init() {
+        <#code#>
+    }
 }
-var colossus = Colossus()
+// life = 300 ; attack = 5
+
+Colossus()

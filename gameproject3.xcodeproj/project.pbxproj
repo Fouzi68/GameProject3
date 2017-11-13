@@ -17,6 +17,7 @@
 		AAA47DA71FA7AF54004A174E /* Magus.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA47DA61FA7AF54004A174E /* Magus.swift */; };
 		AAB1AFAF1F9DC52300D27440 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB1AFAE1F9DC52300D27440 /* main.swift */; };
 		AAB1AFB61F9DC74A00D27440 /* game.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB1AFB51F9DC74A00D27440 /* game.swift */; };
+		AADC5F9E1FB9CD4000CCC76E /* Players.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADC5F9D1FB9CD4000CCC76E /* Players.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,6 +44,7 @@
 		AAB1AFAB1F9DC52300D27440 /* mentorat */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = mentorat; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAB1AFAE1F9DC52300D27440 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		AAB1AFB51F9DC74A00D27440 /* game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = game.swift; sourceTree = "<group>"; };
+		AADC5F9D1FB9CD4000CCC76E /* Players.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Players.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,9 +61,9 @@
 		AAA47D9D1FA7A41B004A174E /* characters */ = {
 			isa = PBXGroup;
 			children = (
+				AAA47DA21FA7A72A004A174E /* Character.swift */,
 				AAA47D9E1FA7A573004A174E /* Fighter.swift */,
 				AAA47DA01FA7A5E4004A174E /* Dwarf.swift */,
-				AAA47DA21FA7A72A004A174E /* Character.swift */,
 				AAA47DA41FA7AF36004A174E /* Colossus.swift */,
 				AAA47DA61FA7AF54004A174E /* Magus.swift */,
 			);
@@ -73,6 +75,7 @@
 			children = (
 				AAB1AFAD1F9DC52300D27440 /* gameproject3 */,
 				AAA47D9D1FA7A41B004A174E /* characters */,
+				AADC5F9C1FB9CD0100CCC76E /* Players */,
 				AAB1AFAC1F9DC52300D27440 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -95,6 +98,14 @@
 				AA865FBF1FA7810D00FCDAA8 /* toolsOfCharacters.swift */,
 			);
 			path = gameproject3;
+			sourceTree = "<group>";
+		};
+		AADC5F9C1FB9CD0100CCC76E /* Players */ = {
+			isa = PBXGroup;
+			children = (
+				AADC5F9D1FB9CD4000CCC76E /* Players.swift */,
+			);
+			path = Players;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +175,7 @@
 				AAA47D9F1FA7A573004A174E /* Fighter.swift in Sources */,
 				AAA47DA71FA7AF54004A174E /* Magus.swift in Sources */,
 				AAB1AFB61F9DC74A00D27440 /* game.swift in Sources */,
+				AADC5F9E1FB9CD4000CCC76E /* Players.swift in Sources */,
 				AA874A561F9FDC9600E88D93 /* attack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
