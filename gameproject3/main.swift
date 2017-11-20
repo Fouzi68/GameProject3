@@ -87,11 +87,7 @@ print("=== THE PLAYER 2 CHOICE YOUR CHARACTERS  ===")
             if let choiceTwo = readLine() {
                 switch choiceTwo {
                 case "1":
-                    dwarfFunc(){
-                    }
-                    
-                    
-                    
+                    dwarfFunc()
                 case "2":
                 fighterFunc()
                 case "3":
