@@ -11,4 +11,19 @@ class Magus: Character {
     
 }
 
+
+//     FUNCTION OF MAGUS
+
+func magusFunc() -> Character {
+    print("okay now you have take a magus")
+    var magus = Magus()
+    print("change his name!")
+    magus.name = readLine()
+    return magus
+}
+
+
+
+
+
 // give life = + 35 life

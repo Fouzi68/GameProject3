@@ -11,6 +11,22 @@ import Foundation
 class Fighter: Character {
     
 }
+
+// FUNCTION OF  FIGHTER
+
+func fighterFunc() -> Character {
+    print("okay now you have take a fighter")
+    var fighter = Fighter()
+    characters.append(fighter)
+    print("change his name!")
+    fighter.name = readLine()
+    characters.append(fighter)
+    return fighter
+}
+
+
+
+
 //life = 100 ; attack : 10
 
 

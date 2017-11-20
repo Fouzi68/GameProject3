@@ -36,8 +36,10 @@ if let choice = readLine() {
 print("=== OK YOU HAVE THE TEAM 1 ! NOW CHOICE THREE CHARACTERE ! ===")
 var i = 0
 let g = 3
-// choice of charactere & changing his name
 
+
+// choice of charactere & changing his name
+var characters = [Character] ()
 while i < g {
     print(""
         + "\n.1 Dwarf"
@@ -48,56 +50,62 @@ while i < g {
            switch choix {
            // DWARF
            case "1":
-           print("okay now you have take a dwarf")
-         var dwarf = Dwarf()
-           Character.characters = [dwarf]
-           print("change the name of your characters")
-
-            dwarf.name = readLine()
+           dwarfFunc()
+           
+           
            // FIGHTER
            case "2":
-            print("okay now you have take a fighter")
-
-            var fighter = Fighter()
-            Character.characters = [fighter]
-            print("change the name of your characters")
-
-            fighter.name = readLine()
-          
+           fighterFunc()
            // MAGUS
            case "3":
-            print("okay now you have take a magus")
-         var magus = Magus()
-
-            Character.characters = [magus]
-
-            magus.name = readLine()
-
-
+            magusFunc()
+            
            //COLOSSUS
            case "4":
-            print("okay now you have take a colossus")
-
-           var colossus = Colossus()
-           Character.characters = [colossus]
-          colossus.name = readLine()
+           colossusFunc()
+          
            default:
-           print("I DON'T UNDERSTAND YOUR CHOICE !")
-            
+            print("i dont understand")
+            }
                 }
-            i += 1
+                 i += 1
           }
+
+
+print(" the name of your characters are \(characters[0].name!), \(characters[1].name!), \(characters[2].name!) ")
+
+// CHOICE OF THE PLAYER TWO !
+
+print("=== THE PLAYER 2 CHOICE YOUR CHARACTERS  ===")
+        var charactersTwo = [Character] ()
+        while i < g {
+            print(""
+                + "\n.1 Dwarf"
+                + "\n.2 Fighter"
+                + "\n.3 Magus"
+                + "\n.1 Colossus")
+            if let choiceTwo = readLine() {
+                switch choiceTwo {
+                case "1":
+                    dwarfFunc(){
+                    }
+                    
+                    
+                    
+                case "2":
+                fighterFunc()
+                case "3":
+                magusFunc()
+                case "4":
+                colossusFunc()
+                    
+                default:
+                    print("i don't understand your choice")
     }
-var lol = Fighter()
-
-// change the name
-
-print(" the name of your characters"
-    + "\n.1 \(Character.characters[0])"
-    + "\n.2 \(Character.characters[1])"
-    + "\n.3 \(Character.characters[2])")
-
-
+  }
+    i += 1
+}
 
 // finir la partie 1, tableau de joueur, partie 2 fonction ou methode !
+
 

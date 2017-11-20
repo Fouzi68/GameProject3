@@ -8,10 +8,21 @@
 
 import Foundation
 class Colossus: Character{
-    override init() {
-        <#code#>
-    }
+    
 }
+
+// FUNCTION OF COLOSSUS
+
+func colossusFunc() -> Character {
+    print("okay now you have take a colossus")
+    var colossus = Colossus()
+    print("change his name!")
+    colossus.name = readLine()
+    return colossus
+}
+
+
+
 // life = 300 ; attack = 5
 
-Colossus()
+

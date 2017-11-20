@@ -9,13 +9,20 @@
 import Foundation
 
 class Dwarf: Character {
-    override init(type: Character) {
-       self.type = Character
-    }
+  
     
     }
     
 
-
+//    FUNCTION OF DWARF
+func dwarfFunc() -> Character {
+    print("okay now you have take a dwarf")
+    var dwarf = Dwarf()
+    print("change his name!")
+    
+    dwarf.name = readLine()
+    characters.append(dwarf)
+    return dwarf
+}
 // life = 30 ; attack = 70
 
